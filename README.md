@@ -37,6 +37,15 @@ python main.py
 
 ```
 
+## Play in Windows
+
+```.exe
+You can also play without the need to set up the development environment using an IDE.
+  - download the zip file
+  - run the file "save-the-pig.exe"
+```
+
+
 ## Contact
 
 Caio Alves de Souza
