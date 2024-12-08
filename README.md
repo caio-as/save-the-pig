@@ -1,9 +1,9 @@
 # Save the Pig!
 # About this project
 
-A simple game built with PyGame, in a 2D pixel art theme, bringing nostalgia to 80s games.
-Project created for the Applied Programming Language subject at Uninter College.
-Developed by Caio Alves de Souza - RU 4467638
+- A simple game built with PyGame, in a 2D pixel art theme, bringing nostalgia to 80s games.
+- Project created for the Applied Programming Language subject at Uninter College.
+- Developed by Caio Alves de Souza - RU 4467638
 
 ## Objective
 
