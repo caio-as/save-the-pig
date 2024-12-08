@@ -2,8 +2,12 @@
 # About this project
 
 A simple game built with PyGame, in a 2D pixel art theme, bringing nostalgia to 80s games.
-This game was created for a project on the subject of Applied Programming Language, at Uninter College, for the Systems Analysis and Development course.
+Project created for the Applied Programming Language subject at Uninter College.
 Developed by Caio Alves de Souza - RU 4467638
+
+## Objective
+
+Save the pig from the butcher's clutches, try to jump over the butcher and dodge the flying knives for as long as possible.
 
 ## How to play?
 
