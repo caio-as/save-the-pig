@@ -8,7 +8,7 @@ def show_high_scores(screen, db_cursor):
     high_scores = db_cursor.fetchall()
 
     # Display high scores on the screen
-    font = pygame.font.Font(None, 48)
+    font = pygame.font.Font(None, 36)
     header_text = font.render("High Scores", True, (0, 0, 0))
     screen.fill((255, 255, 255))
     screen.blit(header_text, (SCREEN_WIDTH // 2 - header_text.get_width() // 2, SCREEN_HEIGHT // 4))

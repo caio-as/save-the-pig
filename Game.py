@@ -22,7 +22,7 @@ class Game:
         self.game_over = False
         self.player_name = player_name
 
-        self.main_font = pygame.font.Font("assets/font/Pixeltype.ttf", 50)
+        self.main_font = pygame.font.Font("assets/font/Pixeltype.ttf", 36)
 
         self.sky_surface = pygame.image.load("assets/graphics/sky.png").convert()
         self.ground_surface = pygame.image.load("assets/graphics/ground.png").convert()
@@ -53,7 +53,7 @@ class Game:
     def show_player_name_screen(self):
         # Show screen for player to enter name
         self.screen.fill((255, 255, 255))
-        font = pygame.font.Font(None, 48)
+        font = pygame.font.Font(None, 36)
         prompt_text = font.render("Enter your name:", True, (0, 0, 0))
         self.screen.blit(prompt_text, (SCREEN_WIDTH // 4, SCREEN_HEIGHT // 3))
 
@@ -121,7 +121,7 @@ class Game:
 
         # Display high scores on the screen
         self.screen.fill((255, 255, 255))
-        font = pygame.font.Font(None, 48)
+        font = pygame.font.Font(None, 36)
         header_text = font.render("High Scores", True, (0, 0, 0))
         self.screen.blit(header_text, (SCREEN_WIDTH // 2 - header_text.get_width() // 2, SCREEN_HEIGHT // 4))
 

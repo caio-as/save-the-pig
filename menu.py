@@ -10,7 +10,7 @@ class Menu:
         pygame.init()
         pygame.display.set_caption("Menu")
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-        self.font = pygame.font.Font(None, 48)
+        self.font = pygame.font.Font(None, 36)
         self.db_connection = sqlite3.connect('scores.db')
         self.db_cursor = self.db_connection.cursor()
 
@@ -25,12 +25,12 @@ class Menu:
 
             # Title Text
             title_text = self.font.render("Save the pig!", True, (0, 0, 0))
-            self.screen.blit(title_text, (SCREEN_WIDTH // 2 - title_text.get_width() // 2, SCREEN_HEIGHT // 4))
+            self.screen.blit(title_text, (SCREEN_WIDTH // 2 - title_text.get_width() // 2, SCREEN_HEIGHT // 6))
 
             # Display options
             for index, option in enumerate(self.options):
                 option_text = self.font.render(f"{index+1}. {option}", True, (0, 0, 0))
-                self.screen.blit(option_text, (SCREEN_WIDTH // 4, SCREEN_HEIGHT // 1.5 + index * 60))
+                self.screen.blit(option_text, (SCREEN_WIDTH // 4, SCREEN_HEIGHT // 3 + index * 40))
 
             pygame.display.update()
 
