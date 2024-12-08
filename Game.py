@@ -156,10 +156,18 @@ class Game:
     def draw_game_over(self):
         # Displays Game Over
         game_over_text = self.main_font.render("Game Over", False, "Red")
-        game_over_rect = game_over_text.get_rect(
-            center=(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
-        )
+        game_over_rect = game_over_text.get_rect(center=(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2))
         self.screen.blit(game_over_text, game_over_rect)
+
+        # Displays Play Again message
+        play_again_text = self.main_font.render("To play again, press 'R'", False, "Blue")
+        play_again_rect = play_again_text.get_rect(center=(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 1.5))
+        self.screen.blit(play_again_text, play_again_rect)
+
+        # Displays See Score message
+        see_score_text = self.main_font.render("To see the score, close the window with the 'X'", False, "Blue")
+        see_score_rect = see_score_text.get_rect(center=(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 1.3))
+        self.screen.blit(see_score_text, see_score_rect)
 
     def add_obstacle(self):
         # Obstacle handling
