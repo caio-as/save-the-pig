@@ -34,6 +34,10 @@ class Game:
 
         self.obstacle_timer = pygame.USEREVENT + 1
         pygame.time.set_timer(self.obstacle_timer, 900)
+        
+        # Load game over sound
+        self.game_over_sound = pygame.mixer.Sound("assets/audio/death.mp3")
+        self.game_over_sound.set_volume(0.5)
 
         # Initialize the database
         self.db_connection = sqlite3.connect('scores.db')
@@ -176,9 +180,12 @@ class Game:
                     self.restart()
 
     def handle_collision(self):
-        # Overcoming obstacles
+        # Detect collision between player and obstacles
         if pygame.sprite.spritecollide(self.player.sprite, self.obstacle_group, False):
-            self.game_over = True
+            if not self.game_over:  # Ensure the sound plays only once per game over
+                self.game_over = True
+                self.game_over_sound.play()
+
 
     def update_score(self):
         self.score = int((pygame.time.get_ticks() - self.start_time) / 80)
