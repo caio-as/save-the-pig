@@ -15,13 +15,17 @@ class Menu:
         self.db_cursor = self.db_connection.cursor()
 
         self.options = ["Start Game", "View High Scores", "Exit"]
-     
+
+        # Carregar a imagem de fundo
+        self.background = pygame.image.load("assets/graphics/background_menu.png").convert()
+
     def show(self):
         input_active = False
         player_name = ""
         
         while True:
-            self.screen.fill((255, 255, 255))
+            # Preencher a tela com a imagem de fundo
+            self.screen.blit(self.background, (0, 0))
 
             # Title Text
             title_text = self.font.render("Save the pig!", True, (0, 0, 0))
