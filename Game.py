@@ -35,6 +35,14 @@ class Game:
         self.obstacle_timer = pygame.USEREVENT + 1
         pygame.time.set_timer(self.obstacle_timer, 900)
         
+        # Initialize theme sound
+        try:
+            pygame.mixer.music.load("assets/audio/theme.mp3")
+            pygame.mixer.music.set_volume(0.1) # Adjust the volume if necessary
+            pygame.mixer.music.play(loops=-1, start=0.0)  # Play music in a loop
+        except pygame.error as e:
+            print(f"Error loading background music: {e}")
+        
         # Load game over sound
         self.game_over_sound = pygame.mixer.Sound("assets/audio/death.mp3")
         self.game_over_sound.set_volume(0.5)
