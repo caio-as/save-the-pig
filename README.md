@@ -37,7 +37,7 @@ python main.py
 
 ```
 
-## Play the game using windows
+## Play on Windows
 
 ```.exe
 You can also play without the need to set up the development environment using an IDE.
