@@ -43,10 +43,8 @@ python main.py
 You can also play without the need to set up the development environment using an IDE.
   - download the zip file:
     - click the Code, Download ZIP
-    ![image](https://github.com/user-attachments/assets/6abe01bd-8d89-4da3-859a-6be34d55a0aa)
     - extract the zipped folder on your computer
-    - search for play.exe on:
-      "\save-the-pig-1.0.0\play\play\play.exe"
+    - search for play.exe on:  "\save-the-pig-1.0.0\play\play\play.exe"
   - and have fun
 ```
 
