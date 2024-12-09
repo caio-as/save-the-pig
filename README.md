@@ -37,12 +37,15 @@ python main.py
 
 ```
 
-## Play in Windows
+## Play on Windows
 
 ```.exe
 You can also play without the need to set up the development environment using an IDE.
-  - download the zip file
-  - run the file "save-the-pig.exe"
+  - download the zip file:
+    - click the Code, Download ZIP
+    - extract the zipped folder on your computer
+    - search for play.exe on:  "\save-the-pig-1.0.0\play\play\play.exe"
+  - and have fun
 ```
 
 
