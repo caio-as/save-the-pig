@@ -16,7 +16,7 @@ class Menu:
 
         self.options = ["Start Game", "View High Scores", "Exit"]
 
-        # Carregar a imagem de fundo
+        # Load background
         self.background = pygame.image.load("assets/graphics/background_menu.png").convert()
 
     def show(self):
@@ -24,7 +24,7 @@ class Menu:
         player_name = ""
         
         while True:
-            # Preencher a tela com a imagem de fundo
+            # Fill the screen with the background image
             self.screen.blit(self.background, (0, 0))
 
             # Title Text

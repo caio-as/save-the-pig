@@ -57,6 +57,10 @@ class Game:
     def show_player_name_screen(self):
         # Show screen for player to enter name
         self.screen.fill((255, 255, 255))
+
+        # Draw background
+        self.background = pygame.image.load("assets/graphics/background_menu.png").convert()
+        
         font = pygame.font.Font(None, 36)
         prompt_text = font.render("Enter your name:", True, (0, 0, 0))
         self.screen.blit(prompt_text, (SCREEN_WIDTH // 4, SCREEN_HEIGHT // 3))
@@ -79,7 +83,8 @@ class Game:
                     else:
                         name_input += event.unicode
 
-            self.screen.fill((255, 255, 255))
+            # Draws background and updates player data
+            self.screen.blit(self.background, (0, 0))
             self.screen.blit(prompt_text, (SCREEN_WIDTH // 4, SCREEN_HEIGHT // 3))
             name_text = font.render(name_input, True, (0, 0, 0))
             self.screen.blit(name_text, (SCREEN_WIDTH // 4, SCREEN_HEIGHT // 2))
