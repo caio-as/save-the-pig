@@ -44,7 +44,7 @@ You can also play without the need to set up the development environment using a
   - download the zip file:
     - click the Code, Download ZIP
     - extract the zipped folder on your computer
-    - search for play.exe on:  "\save-the-pig-1.0.0\play\play\play.exe"
+    - search for play.exe on:  "\save-the-pig-2.0.0\save-the-pig-2.0.0\play\play.exe"
   - and have fun
 ```
 
